@@ -1,7 +1,7 @@
 package home_work_two;
 
-public class Code_Of_Caesar {
-    private static String сodeOfCaesar (String in, int key, boolean encrypt) {
+public class CodeOfCaesar {
+    public static String codeOfCaesar (String in, int key, boolean encrypt) {
         if (in == null || in.isEmpty())
             return null;
 

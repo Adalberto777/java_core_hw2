@@ -1,15 +1,16 @@
 package home_work_two;
 
-public class Оffseter {
-    public static void offset(int[] a, int n) {
-        n %= a.length;
-        int offset = a.length + n;
-        offset %= a.length;
+public class Shifter {
+    public static int[] offset(int[] arr, int n) {
+        n %= arr.length;
+        int offset = arr.length + n;
+        offset %= arr.length;
 
         for (int i = 0; i < offset; i++) {
-            int temp = a[a.length - 1];
-            System.arraycopy(a, 0, a, 1, a.length - 1);
-            a[0] = temp;
+            int temp = arr[arr.length - 1];
+            System.arraycopy(arr, 0, arr, 1, arr.length - 1);
+            arr[0] = temp;
             }
+        return arr;
         }
 }
